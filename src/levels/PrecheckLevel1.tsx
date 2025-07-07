@@ -69,7 +69,7 @@ export default function PrecheckLevel1({ setNotification }: LevelProps) {
           >
             <Container flexDirection="column" alignItems="flex-start">
               <Text fontSize={12} fontWeight="bold">
-                Welcome to Adani immersive trainning module
+                Welcome to Adani immersive training module
               </Text>
               <Text fontSize={10} fontWeight="medium">
                 Click on the video to play and pause the video
