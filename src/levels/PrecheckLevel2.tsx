@@ -1,10 +1,11 @@
 import { Container, Root, Text } from "@react-three/uikit"
-
+import { Image } from "@react-three/drei"
+import { DoubleSide } from "three"
 import { LevelProps } from '../interfaces'
 import { useEffect } from "react"
 // import { Button } from "../components/apfel/button"
 // import { CheckCircleIcon } from "@react-three/uikit-lucide"
-import VideoPlayer from "../VideoPlayer"
+// import VideoPlayer from "../VideoPlayer"
 import Model from "../Model"
 
 export default function PrecheckLevel2({ setNotification }: LevelProps) {
@@ -15,7 +16,7 @@ export default function PrecheckLevel2({ setNotification }: LevelProps) {
 
   return (
     <>
-      <group position={[0, 4.8, -4]}>
+      <group position={[0, 4.2, -4]}>
         <Root>
           <Container flexDirection={"column"} justifyContent="center" alignItems="center">
             <Text fontWeight="bold" fontSize={14} letterSpacing={0} color="#3064D7">
@@ -23,10 +24,10 @@ export default function PrecheckLevel2({ setNotification }: LevelProps) {
             </Text>
             {/* <Container height={20}></Container> */}
             <Text fontWeight="bold" fontSize={14} letterSpacing={0} color="#3064D7" >
-              Amitabh Mishra
+              Vaibhav Alshi
             </Text>
             <Text fontWeight="bold" fontSize={14} letterSpacing={0} color="#3064D7">
-              CHRO, Adani Natural Resource
+              CPO, Adani Natural Resource
             </Text>
           </Container>
         </Root>
@@ -34,8 +35,7 @@ export default function PrecheckLevel2({ setNotification }: LevelProps) {
       {/* <Model scale={1} position={[-4, 3, -2]} rotation={[0, 0, 0]} url="/assets/globe.glb"></Model> */}
       <Model scale={1} position={[0, 5, 0]} rotation={[0, -Math.PI / 4, 0]} url="/assets/intro-gallery.glb"></Model>
 
-
-      <VideoPlayer scale={[0.55, 0.5, 0.5]} src="/assets/Amitabh Mishra Compressed.mp4" position={[0, 3, -4]} rotation={[0, 0, 0]}></VideoPlayer>
+ <Image url="/assets/CPO-Anr.jpg" position={[0, 1.4, -4]} toneMapped={false} scale={[3.25, 4.5]} rotation={[0, 0, 0]} castShadow receiveShadow side={DoubleSide} />
       {/* <group position={[0, 2, -2]}>
         <Root>
           <Container flexDirection={"column"} justifyContent="center" alignItems="center">
